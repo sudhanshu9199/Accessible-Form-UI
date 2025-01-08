@@ -1,0 +1,84 @@
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0 0 50px; /*top right bottom left*/
+}
+label{
+    font-weight: 500;
+    font-size: 20px;
+}
+input{
+    margin: 5px 0 12px 0; /*top right bottom left*/
+    width: 300px;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+}
+#email{
+    margin-bottom: 0;
+    border-color: red;
+}
+.error-msg{
+    color: red;
+    margin-top: 2px;
+}
+.update-btn{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 18px;
+    border-radius: 12px;
+    color: white;
+    background: black;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.update-btn:hover{
+    font-size: 21px;
+    padding: 18px;
+}
+.box2{
+    margin: 80px 50px 0 0; /*top right bottom left*/
+}
+.progress-container{
+    width: 100%;
+    height: 25px;
+    background: #e0e0e0;
+    border-radius: 12.5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+}
+.progress{
+    height: 100%;
+    background: linear-gradient(90deg, rgba(117,6,227,1) 35%, rgba(0,255,39,1) 100%);
+    width: 40%; /*Adjust width dynamically*/
+    transition: width 0.5s ease-in-out;
+    position: relative;
+}
+.percentage{
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(11, 11, 11);
+    font-size: 14px;
+    font-weight: bold;
+}
+.box2-1{
+    margin: 20px;
+    background: rgb(224, 224, 224);
+    /* color: gray; */
+    color: black;
+    padding: 20px;
+    border-radius: 28px;
+}
+.done{
+    color: gray;
+    text-decoration: line-through;
+}
